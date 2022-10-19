@@ -23,8 +23,7 @@ class DemoPage extends StatefulWidget {
 class _DemoPageState extends State<DemoPage> {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations(
-        [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
     return MaterialApp(
 
@@ -40,9 +39,9 @@ class _DemoPageState extends State<DemoPage> {
                   width: MediaQuery.of(context).size.width * .40,
                   color: Colors.red,
 
-                  child: FittedBox(
+                  child: const FittedBox(
                     fit: BoxFit.contain,
-                    child: Text("tesing branch"),
+                    child: Text("testing branch"),
                   ),
                 )
 
